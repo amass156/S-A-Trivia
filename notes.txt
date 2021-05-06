@@ -27,15 +27,15 @@ Bonus round where user has to manually type in the answers.
 
 ======================= To - Do List ================
 []  Buttons
-    []Create 
     []Create "Sports" button
     []Create "baskebtall, baseball" buttons
     [] Create a "skip" button
     [] Create a "Next" button
     []Add functionality to Buttons
+    [x] Score incrments when button is clicked
 
 [] Questions
-    [] Create 4 questions for basketball
+    [x] Create 4 questions for basketball
     [] Create 4 questions for baseball
     [] Create 4 questions for soccer
     [] Allow for questions to display one at a time
@@ -47,6 +47,6 @@ Bonus round where user has to manually type in the answers.
 
 [] Styling 
     [] Header placement
-    [] Button placement
-    [] Question placement
-    [] Answer choice placement
+    [x] Button placement
+    [x] Question placement
+    [x] Answer choice placement

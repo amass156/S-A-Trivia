@@ -1,5 +1,5 @@
 #score {
-    color: red;
+    color:mediumslateblue;
     display: flex;
     justify-content: flex-end;
 }
@@ -21,12 +21,6 @@
     flex-direction: column;
 }
 
-#a {
-    text-rendering: auto;
-    word-spacing: normal;
-    display: inline-block;
-    text-align: start;
-}
 
 .flex {
     display: flex;
@@ -41,5 +35,12 @@
     padding: 5px;
     display:flex;
     text-align: center;
-    
+}
+
+.correct {
+    border-radius: 50%;
+    font-size: 16px;
+    padding: 5px;
+    display:flex;
+    text-align: center;
 }
