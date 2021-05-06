@@ -1,0 +1,45 @@
+#score {
+    color: red;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.next {
+    float: right;
+}
+
+.question {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.choices {
+    display: flex;
+    align-items:center;
+    justify-content:center; 
+    flex-direction: column;
+}
+
+#a {
+    text-rendering: auto;
+    word-spacing: normal;
+    display: inline-block;
+    text-align: start;
+}
+
+.flex {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    border-radius: 50%;
+    font-size: 16px;
+    padding: 5px;
+    display:flex;
+    text-align: center;
+    
+}

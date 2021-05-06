@@ -1,0 +1,52 @@
+------------------------- User Stories -------------------
+As a player I would like to know the instructions initially.
+As a player I would like to be able to choose my category
+As a player I want to be able to know the amount of time I have at all times
+As a player I want to know my current score.
+As a player I want to be able to read the question, and choose the answer that I think best fits.
+As a player I would like to know exactly when the game is over
+
+--------------------------- MVP ----------------------
+Instructions explaining how the game is played.
+Create single Category.
+Create the questions and answers.
+Make it so that a player cannot select more than one answer choice.
+Once the user answers a question, display whether it is correct or incorrect after.
+Make a "Next question" button.
+Create a scoring method.
+
+------------------------ Strech Goals-----------------
+Add hints.
+Create multiple categories
+Create a timer.
+Fetch images for each correct and incorrect answer.
+Allow for multiple players to play.
+Allow for difficulties based on time or by questions asked.
+Show a "final" screen of the results with each question the player got correct or incorrect.
+Bonus round where user has to manually type in the answers.
+
+======================= To - Do List ================
+[]  Buttons
+    []Create 
+    []Create "Sports" button
+    []Create "baskebtall, baseball" buttons
+    [] Create a "skip" button
+    [] Create a "Next" button
+    []Add functionality to Buttons
+
+[] Questions
+    [] Create 4 questions for basketball
+    [] Create 4 questions for baseball
+    [] Create 4 questions for soccer
+    [] Allow for questions to display one at a time
+    [] Allow for questions to display randomly
+
+[] Final score page
+    [] Display final scores
+    [] Display answers that were correct and incorrect
+
+[] Styling 
+    [] Header placement
+    [] Button placement
+    [] Question placement
+    [] Answer choice placement
