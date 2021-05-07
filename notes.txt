@@ -32,7 +32,7 @@ Bonus round where user has to manually type in the answers.
     [] Create a "skip" button
     [] Create a "Next" button
     []Add functionality to Buttons
-    [x] Score incrments when button is clicked
+    [x] Score incrments only 1 time when button is clicked
 
 [] Questions
     [x] Create 4 questions for basketball
@@ -50,3 +50,7 @@ Bonus round where user has to manually type in the answers.
     [x] Button placement
     [x] Question placement
     [x] Answer choice placement
+
+
+Bugs
+    [x] in order for score to increment by one, button needs to be clicked twice
