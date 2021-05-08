@@ -1,3 +1,9 @@
+/* ---------------------Question pages ------------- */
+body {
+    background-color:wheat;
+}
+
+
 #score {
     color:mediumslateblue;
     display: flex;
@@ -12,13 +18,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
 .choices {
     display: flex;
-    align-items:center;
-    justify-content:center; 
-    flex-direction: column;
+    align-items: center;
+    justify-content:flex-start; 
+    flex-direction: row;
+    width: 50vw;
 }
 
 
@@ -27,9 +35,10 @@
     text-align: center;
     justify-content: center;
     align-items: center;
+    width: 100vw;
 }
 
-.btn {
+.btn  {
     border-radius: 50%;
     font-size: 16px;
     padding: 5px;
@@ -37,10 +46,47 @@
     text-align: center;
 }
 
-.correct {
+/* .correct {
     border-radius: 50%;
     font-size: 16px;
     padding: 5px;
     display:flex;
     text-align: center;
+} */
+
+.invis{
+    display: none;
 }
+/* ------------------Welcome Page ----------------- */
+
+#welcome{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 5rem;
+}
+
+#category{
+    display: flex;
+    justify-content:center;
+    text-align: center;
+    line-height: 1.6;
+    margin-top:  96px;
+    margin-left: 220px;
+    margin-right: 220px;
+    border: 1px solid blue;
+    background-color:rgb(21, 177, 177);
+    padding: 5px;
+}
+
+#sport-category{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 95px;
+    margin-left: 250px;
+    margin-right: 250px;
+    padding: 17px;
+    border: 5px solid green;
+    background-color: indianred;
+}
+
+/* ----------------- Categories (page 2) --------------- */
