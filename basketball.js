@@ -14,16 +14,18 @@ for (let i = 0; i < correctButton.length; i++){
 
 
 // Allow each button box highlights a certain color when clicked
-let x = null
+let currButton = null
 let buttonClick = document.getElementsByClassName("btn")
-console.log(buttonClick);
+
 for (let i = 0; i < buttonClick.length; i++){
     buttonClick[i].addEventListener("click", function(){
-        if (x !== null){
-            x.style.backgroundColor = ""
+        if (currButton !== null){
+            currButton.style.backgroundColor = ""
         }
         buttonClick[i].style.backgroundColor = "red"
-        x = buttonClick[i]
+        currButton = buttonClick[i]
+    }, {
+        once: true
     })
 }
 
@@ -46,21 +48,39 @@ for (let i = 0; i < buttonClick.length; i++){
 // let unhide = document.getElementById("question2")
 // unhide.classList.remove("invis")
 
+//Next question appears when a button is clicked
+let next = document.querySelectorAll(".btn")
+console.log(next);
+let currClick = 0
+
+let  question = document.querySelectorAll("main")
+console.log(question);
+next.forEach(e => 
+    e.addEventListener("click", function(){
+        question[currClick].classList.add("invis")
+        currClick =+ 1
+        if(question.length === currClick){
+
+        }
+        question[currClick].classList.remove("invis")
+    }))
+
+
+
 //skip function 
 let skip = document.querySelectorAll(".skip")
-console.log(skip);
 
 let currQ = 0
-let  q = document.querySelectorAll("main")
-console.log(q);
+// let  question = document.querySelectorAll("main")
+
 skip.forEach(e =>  
     e.addEventListener("click", function(){
-        q[currQ].classList.add("invis")
+        question[currQ].classList.add("invis")
         currQ += 1
-        if(q.length === currQ){
-            window.location.href = "football.html"
+        if(question.length === currQ){
+            window.location.href = "last page goes here"
         }
-        q[currQ].classList.remove("invis")
+        question[currQ].classList.remove("invis")
     }))
 
 

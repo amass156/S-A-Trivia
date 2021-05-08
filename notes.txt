@@ -28,17 +28,16 @@ Bonus round where user has to manually type in the answers.
 ======================= To - Do List ================
 []  Buttons
     []Create "Sports" button
-    []Create "baskebtall, baseball" buttons
-    [] Create a "skip" button
-    [] Create a "Next" button
+    []Create "baskebtall, football" buttons
+    [x] Create a "skip" button
+    [x] Create a "Next" button
     []Add functionality to Buttons
     [x] Score incrments only 1 time when button is clicked
 
 [] Questions
     [x] Create 4 questions for basketball
-    [] Create 4 questions for baseball
-    [] Create 4 questions for soccer
-    [] Allow for questions to display one at a time
+    [x] Create 4 questions for football
+    [x] Allow for questions to display one at a time
     [] Allow for questions to display randomly
 
 [] Final score page
