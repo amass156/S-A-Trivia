@@ -12,7 +12,7 @@ Create single Category.
 Create the questions and answers.
 Make it so that a player cannot select more than one answer choice.
 Once the user answers a question, display whether it is correct or incorrect after.
-Make a "Next question" button.
+Make a "Skip question" button.
 Create a scoring method.
 
 ------------------------ Strech Goals-----------------

@@ -7,8 +7,6 @@ for (let i = 0; i < correctButton.length; i++){
     correctButton[i].addEventListener("click",function() {
         score += 1
         document.getElementById("score").innerHTML = score;
-    }, {
-        once: true
     })
 }
 
@@ -29,59 +27,68 @@ for (let i = 0; i < buttonClick.length; i++){
     })
 }
 
-// function clicks(e){
-//     let buttonClick = document.getElementsByClassName("btn")
-//     console.log(buttonClick);
-//     // for (let i = 0; i < buttonClick.length; i++){
-//     //     buttonClick[i].addEventListener("click", clicks)
-//         buttonClick[0].style.backgroundColor = "red"
-//         console.log(buttonClick);
-//     // }
-//     // buttonClick.removeEventListener("click", clicks)
-// }
 
-
-
-
-// in order to get one question on the page, hide the rest here
-
-// let unhide = document.getElementById("question2")
-// unhide.classList.remove("invis")
 
 //Next question appears when a button is clicked
 let next = document.querySelectorAll(".btn")
-console.log(next);
-let currClick = 0
-
+correct = document.querySelectorAll("correct")
 let  question = document.querySelectorAll("main")
 console.log(question);
-next.forEach(e => 
-    e.addEventListener("click", function(){
-        question[currClick].classList.add("invis")
-        currClick =+ 1
-        if(question.length === currClick){
+// console.log(next);
+let currClick = 0
 
-        }
-        question[currClick].classList.remove("invis")
-    }))
+function nextPage(){
+    console.log(next);
+    next.forEach(e => 
+        e.addEventListener("click", function(){
+            question[currClick].classList.add("invis")
+            currClick += 1
+            console.log(e);
+            // if(question.length === currClick){
+    
+                // }
+                question[currClick].classList.remove("invis")
+        }))
+}
+nextPage()
 
 
 
 //skip function 
-let skip = document.querySelectorAll(".skip")
 
+let skip = document.querySelectorAll(".skip")
 let currQ = 0
 // let  question = document.querySelectorAll("main")
 
-skip.forEach(e =>  
-    e.addEventListener("click", function(){
-        question[currQ].classList.add("invis")
-        currQ += 1
-        if(question.length === currQ){
-            window.location.href = "last page goes here"
-        }
-        question[currQ].classList.remove("invis")
-    }))
+function skipButton(){
+    // console.log(skip);
+    skip.forEach(e =>  
+        e.addEventListener("click", function(){
+            question[currQ].classList.add("invis")
+            currQ += 1
+            if(question.length === currQ){
+                window.location.href = "last page goes here"
+            }
+            question[currQ].classList.remove("invis")
+        }))
+}
+skipButton()
+
+// let test = document.querySelectorAll(".skip")
+// function nextQuestion(){
+//     for (let i = 0; i < test.length ; i++){
+//         console.log(test);
+//         next[i].addEventListener("click", function(){ 
+//             question[currClick].classList.add("invis")
+//                 currClick =+ 1
+//                 if(question.length === currClick){
+        
+//                 }
+//                 question[currClick].classList.remove("invis")
+//         })
+//     }
+// }
+// nextQuestion()
 
 
 
