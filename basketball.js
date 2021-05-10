@@ -30,7 +30,7 @@ for (let i = 0; i < buttonClick.length; i++){
 
 
 //Next question appears when a button is clicked
-let next = document.querySelectorAll(".btn")
+let button = document.querySelectorAll(".btn")
 correct = document.querySelectorAll("correct")
 let  question = document.querySelectorAll("main")
 console.log(question);
@@ -38,8 +38,8 @@ console.log(question);
 let currClick = 0
 
 function nextPage(){
-    console.log(next);
-    next.forEach(e => 
+    console.log(button);
+    button.forEach(e => 
         e.addEventListener("click", function(){
             question[currClick].classList.add("invis")
             currClick += 1
