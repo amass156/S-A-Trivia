@@ -1,5 +1,8 @@
 /* ------------------Welcome Page ----------------- */
-
+.welcome-color {
+    height: 100vh;
+    background:linear-gradient(blue, pink)
+}
 #welcome {
     display: flex;
     justify-content: space-evenly;
@@ -43,15 +46,15 @@
 /* ----------------- Categories (page 2) --------------- */
 
 #category-color {
-    background-color:rgb(228, 152, 144)
+    background: linear-gradient(45deg,rgb(252, 137, 156) 60%, blue 60%);
 }
 
 #category-header{ 
-    color: paleturquoise; 
+    color: rgb(150, 227, 247); 
     display: flex;
     justify-content: space-evenly;
     margin-top: 12vw;
-    border-bottom: 15px solid darkblue;
+    border-bottom: 10px solid darkblue;
     border-radius: 15px;
     padding-bottom: 15px;
     font-size: 30px;
@@ -91,14 +94,20 @@
 }
 
 /* ---------------------Question pages ------------- */
-#questions-color {
-    background-color:pink;
+.basketball-color {
+    height: 100vh;
+    background:linear-gradient(45deg,purple, rgb(0, 255, 136) 17%, blue , transparent);
+}
+.football-color{
+    height: 100vh;
+    background: linear-gradient(-160deg,rgb(0, 102, 128), white )
 }
 
 #score {
-    color:mediumslateblue;
+    color:black;
     display: flex;
     justify-content: flex-end;
+    font-size: 50px;
 }
 
 .next {
@@ -111,6 +120,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    color: white;
 }
 
 .choices {
