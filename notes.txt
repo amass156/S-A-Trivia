@@ -26,26 +26,26 @@ Show a "final" screen of the results with each question the player got correct o
 Bonus round where user has to manually type in the answers.
 
 ======================= To - Do List ================
-[]  Buttons
-    []Create "Sports" button
-    []Create "baskebtall, football" buttons
+[x]  Buttons
+    [x]Create "Sports" button
+    [x]Create "baskebtall, football" buttons
     [x] Create a "skip" button
     [x] Create a "Next" button
-    []Add functionality to Buttons
+    [x]Add functionality to Buttons
     [x] Score incrments only 1 time when button is clicked
 
-[] Questions
+[x] Questions
     [x] Create 4 questions for basketball
     [x] Create 4 questions for football
     [x] Allow for questions to display one at a time
-    [] Allow for questions to display randomly
+    [x] Allow for questions to display randomly
 
 [] Final score page
-    [] Display final scores
+    [x] Display final scores
     [] Display answers that were correct and incorrect
 
 [] Styling 
-    [] Header placement
+    [x] Header placement
     [x] Button placement
     [x] Question placement
     [x] Answer choice placement
