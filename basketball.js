@@ -16,7 +16,7 @@ let score = 0
 let correctButton = document.querySelectorAll(".correct")
 function scoreIncrease(){
     score += 1
-    document.getElementById("score").innerHTML = score;
+    document.getElementById("score").innerHTML = `Score: ${score}`;
 }
 
 for (let i = 0; i < correctButton.length; i++){

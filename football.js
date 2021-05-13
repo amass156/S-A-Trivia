@@ -19,14 +19,20 @@ for (let i = 0; i < button.length; i++){
         if (currButton !== null){
             currButton.style.backgroundColor = ""
         }
-        button[i].style.backgroundColor = "red"
+        button[i].style.backgroundColor = "black"
         currButton = button[i]
+    })
+}
+// Allows for score to increment only once when correct button is clicked.
+for (let i = 0; i < button.length; i++){
+    button[i].addEventListener("click", function(){
         if(button[i].classList[1] === "correct"){
             score += 1
             console.log(currButton);
         }
-    })
+    }, {once: true})
 }
+
 //Next question appears when a button is clicked and score goes up by one
 let nextButton = document.querySelectorAll(".next")
 let correctButton = document.querySelectorAll(".correct")
@@ -44,7 +50,7 @@ function nextPage(){
                 window.location.href = "score.html"
             }            
             copyArr[currClick].classList.remove("invis")
-            document.getElementById("score").innerHTML = score;
+            document.getElementById("score").innerHTML = `Score: ${score}`;
         }))  
 }
 nextPage()

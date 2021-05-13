@@ -24,10 +24,6 @@
     text-align: center;
     padding: 10px;
     margin-bottom: 155px;
-    /* border-radius: 9px; */
-    /* border: 3px solid blue; */
-    /* background-color:rgb(21, 177, 177); */
-    /* width: 150px; */
     font-size: 37px;
 }
 
@@ -41,6 +37,14 @@
     background-color: indianred;
     width: 150px;
     cursor: pointer;
+}
+#sport-category:hover {
+    background-color: rgb(95, 129, 160);
+}
+@media only screen and (max-width: 592px){
+    #welcome {
+        text-align: center;
+    }
 }
 
 /* ----------------- Categories (page 2) --------------- */
@@ -72,6 +76,9 @@
     background-color: darkgray;
     cursor: pointer;
 }
+#basketball-category:hover {
+    background-color: rgba(11, 205, 253, 0.486);
+}
 
 #football-category {
     color: blue;
@@ -85,6 +92,10 @@
     background-color: darkgray;
     cursor: pointer;
 }
+
+#football-category:hover {
+    background-color: rgba(11, 205, 253, 0.486);
+}
 #category-options{
     display: flex;
     margin-top: 9rem;
@@ -93,6 +104,15 @@
     justify-content: space-around;
 }
 
+@media only screen and (max-width: 792px){
+    #category-options {
+        flex-direction: column;
+        margin-top: 11rem;
+    }
+    #category-header {
+        font-size: 40px;
+    }
+}
 /* ---------------------Question pages ------------- */
 .basketball-color {
     height: 100vh;
@@ -107,12 +127,14 @@
     color:black;
     display: flex;
     justify-content: flex-end;
-    font-size: 50px;
+    font-size: 28px;
+    padding-inline-end: 10%;
 }
 
 .next {
     float: right;
     cursor: pointer;
+    padding-top: 30px;
 }
 
 .question {
@@ -121,6 +143,9 @@
     justify-content: center;
     text-align: center;
     color: white;
+    margin-top: 175px;
+    font-size: 25px;
+    font-family: Courier;
 }
 
 .choices {
@@ -131,14 +156,15 @@
     width: 40vw;
 }
 
-
 .flex {
     display: flex;
     text-align: center;
     justify-content: center;
     align-items: center;
     width: 100vw;
-    
+    font-size: 26px;
+    color: rgba(0, 0, 0, 0.589);
+    font-family:Courier, monospace;
 }
 
 .btn  {
@@ -147,11 +173,13 @@
     padding: 5px;
     display:flex;
     text-align: center;
+    margin-right: 6px;
 }
 
 .foot {
     padding-inline-start: 15%;
     padding-inline-end: 15%;
+    padding-top: 100px;
 }
 
 .invis {
@@ -160,3 +188,33 @@
 button {
     cursor: pointer;
 }
+
+.skip-button, .next-button {
+    font-size: 22px;
+    padding: 3px 5px;
+    outline: none;
+    background-color: rgb(134, 176, 240);
+    border-radius: 15px;
+    box-shadow: 0 5px #999;
+}
+.skip-button:hover {background-color: rgb(55, 151, 230);}
+.next-button:hover {background-color: rgb(55, 151, 230);}
+
+.skip-button:active{
+    background-color: rgb(55, 151, 230);
+    box-shadow: 0 2px #666;
+    transform: translateY(3px);
+ }
+.next-button:active{
+    background-color: rgb(55, 151, 230);
+    box-shadow: 0 2px #666;
+    transform: translateY(3px);
+}
+
+@media only screen and (max-width: 792px){
+    .foot {
+      padding-top: 200px;
+      padding-inline-end: 5%;
+    }
+}
+/* -------------- Final Score Page ------------------*/
