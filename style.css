@@ -165,8 +165,12 @@
         flex-direction: column;
         margin-top: 11rem;
     }
-    #category-header {
+    #sports-category-header {
         font-size: 40px;
+    }
+    #animal-category-header {
+        display: flex;
+        text-align: center;
     }
 }
 /* ---------------------Question pages ------------- */

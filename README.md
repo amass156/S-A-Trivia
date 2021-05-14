@@ -1,12 +1,14 @@
 # S-A-Trivia
 ## About 
 
-#### Andre Massiah
-#### Single Player game
- #### Play this game: "insert game link"
+Andre Massiah
+Project #1
+Single Player game
+ ##### Play this game: "insert game link"
 ---
 ### Welcome to the Sports and Animals Trivia Game!
-This game was built using `HTML`, `CSS`, and `JavaScript`. A welcome page appears when the game first loads which allows a user to choose which cateogry they would like to select, "Sports" or "Animals". 
+This game was built using `HTML`, `CSS`, and `JavaScript`. 
+When the game initially loads, a welcome page appears, allowing a user to choose which cateogry they would like to select, "Sports" or "Animals". The object of the game is to try to correctly answer as many questions as possible.
 
 ### User Stories
 
@@ -16,8 +18,8 @@ This game was built using `HTML`, `CSS`, and `JavaScript`. A welcome page appear
 * As a player I want to be able to read the question, and choose the answer that I think best fits.
 * As a player I would like to know exactly when the game is over.
 
-## How the game is played
 ---
+## How the game is played
 ### Step 1
 You first select your desired cateogy.
 <img width="540" alt="Welcome Page" src="https://user-images.githubusercontent.com/81110589/118311485-f78d8e00-b4bd-11eb-9d2b-bd8a1fa1c79d.png">
@@ -45,16 +47,18 @@ For the sports questions, the user must be more decisive, becuase the user is al
 ### Final Screen
 The last an final page shows the user's final score and gives them the option to play again. 
 
-"insert picture here"
+
+<img width="540" alt="Score Page" src="https://user-images.githubusercontent.com/81110589/118332615-595af180-b4d8-11eb-9963-1181c2abaabd.png">
+
 
 ---
 
 ### Bugs
-The bug that was the most difficult to fix was a bug that displayed multiple quesitons on the scree at once. In order to fix this bug, I first had to turn the NodeList I was using into an actual array, and then duplicate that array in order to not disrupt the original set of data. I also had to update my "random question" function, as well as the function that allows the user to move onto the next question once an action is taken. 
+Early in the project, I encountered a bug that displayed multiple quesitons on the screen at once. This bug messed with both the score being incremented as well as the aesthetics of the game. In order to fix this bug, I first had to turn the NodeList I was using into an actual array, and then duplicate that array in order to avoid disrupting the original set of data. I also had to update my "random question" function, as well as the function that allows the user to move onto the next question once an action is taken. 
 
-I also had smaller bugs, such as the score incrementing to a number that is greater than one.
+I also had a much smaller bug that occured when I would attempt to increment the score by 1. Instead, the score would either increment regardless of if the question is correct or not as well as increment by 4 per question. This bug was fixed by changing the place where the score is incremented from the answer choice selection, to when the next button is clicked. 
 
 ---
 
 ### What I would do differently
-If i were to start this project all over again, I would refactor my code to use more javaScript in order to lessen the amount of HTML being used. I found this to be especially relevant with the way that I wrote each question because each question took up over 50 lines of HTML. If I were to do it over I would most likely put the questions into a class, and add the questions using javaScript, rather than hard coding them with HTML. 
+If i were to start this project all over again, I would refactor my code using more javaScript in order to lessen the amount of HTML being written. I found this to be especially relevant with the way that I wrote each question because each question took up over 35 lines of HTML. If I were to do it over I would most likely put the questions into a class, and add the questions using javaScript, rather than hard coding them with HTML. I would also pseudo code more frequently in order to be able to debug and scale alot easier.
