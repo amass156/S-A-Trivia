@@ -86,11 +86,25 @@
 
 /* ----------------- Categories (page 2) --------------- */
 
-#category-color {
+#sports-category-color {
     background: linear-gradient(45deg,rgb(252, 137, 156) 60%, blue 60%);
 }
-
-#category-header{ 
+#animal-category-color {
+    height:100vh;
+    background: linear-gradient(180deg,rgb(9, 131, 9) 60%,rgb(245, 245, 149) 80%);
+    
+}
+#animal-category-header {
+    color: rgba(116, 23, 23, 0.884); 
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 12vw;
+    border-bottom: 3px solid yellowgreen;
+    border-radius: 15px;
+    padding-bottom: 19px;
+    font-size: 40px; 
+}
+#sports-category-header{ 
     color: rgb(150, 227, 247); 
     display: flex;
     justify-content: space-evenly;
@@ -100,8 +114,26 @@
     padding-bottom: 15px;
     font-size: 30px;
 }
+#reptile-category, #mammals-category{
+    color: rgb(105, 39, 39);
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5vw;
+    border: 4px solid darkslategray;
+    border-radius: 9px 18px;
+    padding: 10px;
+    font-size: 35px;
+    background-color: rgba(150, 148, 148, 0.829);
+    cursor: pointer; 
+}
+#reptile-category:hover {
+    background-color: rgba(11, 253, 221, 0.486);
+}
+#mammals-category:hover {
+    background-color: rgba(11, 253, 221, 0.486);
+}
 
-#basketball-category {
+#basketball-category, #football-category {
     color: blue;
     display: flex;
     justify-content: space-around;
@@ -115,19 +147,6 @@
 }
 #basketball-category:hover {
     background-color: rgba(11, 205, 253, 0.486);
-}
-
-#football-category {
-    color: blue;
-    display: flex;
-    justify-content: space-around;
-    margin-top: 5vw;
-    border: 4px solid darkblue;
-    border-radius: 18px 9px;
-    padding: 10px;
-    font-size: 30px;
-    background-color: darkgray;
-    cursor: pointer;
 }
 
 #football-category:hover {
@@ -157,7 +176,7 @@
 }
 .animal-color{
     height: 100vh;
-    background: linear-gradient(-160deg,rgb(0, 102, 128), white )
+    background: linear-gradient(-160deg,rgb(1, 128, 22), white )
 }
 
 #score {
@@ -207,7 +226,7 @@
 .btn  {
     border-radius: 50%;
     font-size: 16px;
-    padding: 5px;
+    padding: 6px;
     display:flex;
     text-align: center;
     margin-right: 6px;
@@ -226,7 +245,7 @@ button {
     cursor: pointer;
 }
 
-.skip-button, .next-button {
+.skip-button {
     font-size: 22px;
     padding: 3px 5px;
     outline: none;
@@ -234,8 +253,20 @@ button {
     border-radius: 15px;
     box-shadow: 0 5px #999;
 }
-.skip-button:hover {background-color: rgb(55, 151, 230);}
-.next-button:hover {background-color: rgb(55, 151, 230);}
+.next-button {
+    font-size: 22px;
+    padding: 3px 5px;
+    outline: none;
+    background-color: rgb(134, 240, 213);
+    border-radius: 15px;
+    box-shadow: 0 5px #999;
+}
+.skip-button:hover {
+    background-color: rgb(55, 151, 230);
+}
+.next-button:hover {
+    background-color: rgb(55, 230, 142);
+}
 
 .skip-button:active{
     background-color: rgb(55, 151, 230);
@@ -243,7 +274,7 @@ button {
     transform: translateY(3px);
  }
 .next-button:active{
-    background-color: rgb(55, 151, 230);
+    background-color: rgb(55, 224, 230);
     box-shadow: 0 2px #666;
     transform: translateY(3px);
 }
