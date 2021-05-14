@@ -6,15 +6,16 @@
 #welcome {
     display: flex;
     justify-content: space-evenly;
-    padding-top: 5rem;
+    padding-top: 2rem;
     font-size: 55px;
+    color:rgb(173, 85, 2);
 }
  
 #new {
     display: flex;
     flex-direction: column;
     align-items:center;
-    margin-top: 9rem;
+    margin-top: 3rem;
     margin-right: auto;
 }
 
@@ -22,9 +23,10 @@
     display: flex;
     justify-content:center;
     text-align: center;
-    padding: 10px;
+    /* padding: 10px; */
     margin-bottom: 155px;
     font-size: 37px;
+    color:mediumblue;
 }
 
 #sport-category {
@@ -37,13 +39,48 @@
     background-color: indianred;
     width: 150px;
     cursor: pointer;
+    color: midnightblue;
+    
+}
+#animal-category {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    border-radius: 9px 18px;
+    border: 3px solid green;
+    background-color: indianred;
+    width: 150px;
+    cursor: pointer;
+    color: midnightblue;  
+}
+#welcome-category {
+    display: flex;
+    justify-content: space-evenly;
 }
 #sport-category:hover {
     background-color: rgb(95, 129, 160);
 }
+#animal-category:hover {
+    background-color: rgb(95, 129, 160);
+}
+.jordan-gif, .lion-roar {
+    width: 300px;
+}
+.welcome-gifs{
+    display: flex;
+    justify-content: space-around;
+}
 @media only screen and (max-width: 592px){
     #welcome {
         text-align: center;
+    }
+    .jordan-gif, .lion-roar {
+        width: 150px;
+    }
+    .welcome-gifs {
+        display: flex;
+        justify-content: space-around;
     }
 }
 
@@ -114,11 +151,11 @@
     }
 }
 /* ---------------------Question pages ------------- */
-.basketball-color {
+.sport-color {
     height: 100vh;
     background:linear-gradient(45deg,purple, rgb(0, 255, 136) 17%, blue , transparent);
 }
-.football-color{
+.animal-color{
     height: 100vh;
     background: linear-gradient(-160deg,rgb(0, 102, 128), white )
 }

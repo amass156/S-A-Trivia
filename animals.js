@@ -47,6 +47,10 @@ function nextPage(){
             copyArr[currClick].classList.add("invis")
             currClick += 1
             if(question.length === currClick){
+                let myStorage = window.localStorage
+                myStorage.setItem("score", score )
+                console.log(myStorage);
+                window.location.href = "score.html"
                 window.location.href = "score.html"
             }            
             copyArr[currClick].classList.remove("invis")
