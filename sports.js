@@ -52,10 +52,8 @@ nextPage()
 
 //skip function 
 let skip = document.querySelectorAll(".skip")
-// let  question = document.querySelectorAll("main")
 
 function skipButton(){
-    // console.log(skip);
     skip.forEach(e =>  
         e.addEventListener("click", function(){
             copyArr[currClick].classList.add("invis")

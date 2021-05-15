@@ -4,7 +4,7 @@
 Andre Massiah
 Project #1
 Single Player game
- ##### Play this game: "insert game link"
+ ##### Play this game: https://amass156.github.io/S-A-Trivia/welcome.html
 ---
 ### Welcome to the Sports and Animals Trivia Game!
 This game was built using `HTML`, `CSS`, and `JavaScript`. 
@@ -62,3 +62,14 @@ I also had a much smaller bug that occured when I would attempt to increment the
 
 ### What I would do differently
 If i were to start this project all over again, I would refactor my code using more javaScript in order to lessen the amount of HTML being written. I found this to be especially relevant with the way that I wrote each question because each question took up over 35 lines of HTML. If I were to do it over I would most likely put the questions into a class, and add the questions using javaScript, rather than hard coding them with HTML. I would also pseudo code more frequently in order to be able to debug and scale alot easier.
+
+---
+### Stretch Goals
+* Add a timer. 
+* Be able to have varying levels of difficulties. 
+* Add modals filled with instructions for each level. 
+* Allow for the user to see the correct answer directly after they select an answer choice. 
+* Allow for the user to be able to chose the amount of quesitons that display.
+* Add promted hints
+* Update the `score` page to show an overview of the questions answered. 
+* Have a personal best section that allows the user to answer an <em>"infinite"</em> amount of questions. They can only get a specified number of questions wrong before the game ends. 
