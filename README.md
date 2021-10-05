@@ -12,7 +12,6 @@ When the game initially loads, a welcome page appears, allowing a user to choose
 
 ### User Stories
 
-* As a player I would like to know the how the game is played.
 * As a player I would like to be able to choose my category.
 * As a player I want to know my current score.
 * As a player I want to be able to read the question, and choose the answer that I think best fits.
@@ -54,7 +53,7 @@ The last an final page shows the user's final score and gives them the option to
 ---
 
 ### Bugs
-Early in the project, I encountered a bug that displayed multiple quesitons on the screen at once. This bug messed with both the score being incremented as well as the aesthetics of the game. In order to fix this bug, I first had to turn the NodeList I was using into an actual array, and then duplicate that array in order to avoid disrupting the original set of data. I also had to update my "random question" function, as well as the function that allows the user to move onto the next question once an action is taken. 
+Early in the project, I encountered a bug that displayed multiple quesitons on the screen at once. This bug messed with both the score being incremented as well as the aesthetics of the game. In order to fix this bug, I first had to turn the NodeList I was using into an actual array, and then duplicate that array in order to avoid disrupting the original set of data. I also had to update my "random question" function.
 
 I also had a much smaller bug that occured when I would attempt to increment the score by 1. Instead, the score would either increment regardless of if the question is correct or not as well as increment by 4 per question. This bug was fixed by changing the place where the score is incremented from the answer choice selection, to when the next button is clicked. 
 
@@ -62,6 +61,10 @@ I also had a much smaller bug that occured when I would attempt to increment the
 
 ### What I would do differently
 If i were to start this project all over again, I would refactor my code using more javaScript in order to lessen the amount of HTML being written. I found this to be especially relevant with the way that I wrote each question because each question took up over 35 lines of HTML. If I were to do it over I would most likely put the questions into a class, and add the questions using javaScript, rather than hard coding them with HTML. I would also pseudo code more frequently in order to be able to debug and scale alot easier.
+
+---
+### What I learned
+This was the first project I've ever created by programming, so my main approach was to complete my MVP's and simply complete the project. With that being said, I gained alot of knowledge from this project by being able to implement all of the skills that I learned so far and get a better understanding of what concepts and topics I was able to grasp and what I did not fully understand. This project taught me that the only way to truly know if you undersatand how to do something in programming that was just learned, is to apply it. The main skills I learned from this project were DOM Manipulation, CSS Styling, and general syntax as well as some syntactical sugar for JavaScript, HTML and CSS.
 
 ---
 ### Stretch Goals
