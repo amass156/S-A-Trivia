@@ -44,7 +44,7 @@ Bonus round where user has to manually type in the answers.
     [x] Display final scores
     [] Display answers that were correct and incorrect
 
-[] Styling 
+[x] Styling 
     [x] Header placement
     [x] Button placement
     [x] Question placement

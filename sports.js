@@ -70,6 +70,14 @@ function skipButton(){
 skipButton()
 
 
+function setAlert(){
+    if (timer === 0){
+        prompt(`Oh no, looks like you've ran out of time!`)
+        window.location.href = "score.html"
+    }
+}
+
+
 
 
 
